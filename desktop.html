@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor M3</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+        }
+
+        body {
+            margin: 0x;
+            padding: 0px;
+            widht: 100%;
+        }
+
+        .barra-header {
+            margin: 0px;
+            height: 40px;
+            padding: 0px;
+            border-bottom: solid 2px grey;
+            position: fixed;
+            top: 0;
+            background: white;
+            width: 100%;
+        }
+
+        .barra-header img {
+            width: 90px;
+            padding: 8px;
+        }
+
+        .barra-header ion-icon {
+            font-size: 25px;
+            position: fixed;
+            margin-right: 10;
+            right: 0;
+        }
+
+
+        .barra-menu {
+            padding-left: 20px;
+            height: 100%;
+            padding-top: 30px;
+            width: 200px;
+
+
+        }
+
+        .Barra-menu-container {
+            display: flex;
+            height: 100%;
+        }
+
+        .Cores {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3px 3px;
+
+        }
+
+        .tamanho {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2px 1px 1px;
+
+        }
+
+        .tamanho p {
+            width: 30px;
+            text-align: center;
+            height: 30px;
+            border: 1px solid grey;
+            font-display: center;
+            font-size: 18;
+        }
+
+        .Container {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding-top: 53px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px 5px;
+        }
+
+        #Container img {
+            width: 130px;
+            height: 180px;
+        }
+
+
+        .produtos {
+            padding-bottom: 30px;
+        }
+
+
+        .produtos button {
+            background: black;
+            color: white;
+            border: solid 2px black;
+            font-weight: bold;
+            font-size: 14px;
+            width: 140px;
+            height: 30px;
+        }
+
+        .preco {
+            text-align: center;
+        }
+
+
+        .name {
+            text-align: center;
+        }
+
+
+        footer {
+            background: black;
+            color: white;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- barra header -->
+    <div class="barra-header">
+        <img src="https://raw.githubusercontent.com/agenciam3/Desenvolvedor-M3/master/src/img/logo-m3.png" />
+        <ion-icon name="bag" />
+    </div>
+
+    <!-- finaliza aqui o header -->
+
+    <!-- barra lateral -->
+    <main>
+        <div class="Barra-menu-container">
+            <div class="barra-menu" id="select-opt">
+                <br>
+                <h2>Blusas</h2>
+                <h3>CORES</h3>
+                <form class="Cores">
+                    <INPUT TYPE="checkbox" NAME="cor" VALUE="Amarelo"> Amarelo
+                        <br>
+                        <INPUT TYPE="checkbox" NAME="cor" VALUE="Azul"> Azul <br>
+                            <INPUT TYPE="checkbox" NAME="cor" VALUE="branco"> Branco <br>
+                                <INPUT TYPE="checkbox" NAME="cor" VALUE="cinza"> Cinza
+                                    <br>
+                                    <INPUT TYPE="checkbox" NAME="cor" VALUE="Laranja"> Laranja <br>
+                                    </form>
+                                    <!-- finaliza o conteúdo da barra lateral -->
+                                    <form class="tamanho">
+                                        <h3>TAMANHOS</h3>
+                                        <br>
+                                        <br>
+
+                                        <p>
+                                            P
+                                        </p>
+                                        <p>
+                                            M
+                                        </p>
+                                        <p>
+                                            G
+                                        </p>
+                                        <p>
+                                            GG
+                                        </p>
+                                        <p>
+                                            U
+                                        </p>
+                                        <p>
+                                            36
+                                        </p>
+                                        <p>
+                                            38
+                                        </p>
+                                        <p>
+                                            40
+                                        </p>
+                                        <p>
+                                            42
+                                        </p>
+                                        <p>
+                                            42
+                                        </p>
+                                        <p>
+                                            46
+                                        </p>
+
+                                    </form>
+
+                                    <form class="parecela">
+                                        <h3>FAIXA DE PREÇO</h3>
+                                        <br>
+                                        <br>
+                                   <input type="checkbox"/>     de R$0 até R$50
+                                   <br>
+
+                                    <input type="checkbox"/>     de R$51 até R$150 <br>
+
+                              <input type="checkbox"/>           de R$151 até R$300 <br>
+
+                                 <input type="checkbox"/>de R$301 até R$500 <br>
+
+                               <input type="checkbox"/> a partir de R$ 01
+
+                                    </form>
+                                </div>
+                                <!-- conteúdo do site (main) -->
+
+                                <div class="Container" id="Container">
+
+                                </div>
+                            </div>
+                            <!-- finaliza o conteudo do site -->
+                        </main>
+
+                        <!-- aqui está o rodapé do site -->
+                        <footer>
+                            <p>
+                                Agência M3 - Agência de Performance Digital
+                            </p>
+                        </footer>
+                    </body>
+
+                    <!-- aqui entrará o conteúdo da logica -->
+                    <script type="module" src="./Js/produtos.js">
+                    </script>
+
+                    <!-- icones usados no projeto importado -->
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+                    </script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+                </html>
